@@ -7,7 +7,7 @@ async function main() {
   const AudityVault = await ethers.getContractFactory("AudityVault");
 
   // Deploy the contract with a verifier address (you can change this to your verifier address)
-  const verifierAddress = "0x742d35Cc6C4f4C4B73aa5555555555555555abcd"; // Replace with actual verifier address
+  const verifierAddress = "0x0000000000000000000000000000000000000000"; // Replace with actual verifier address
   
   const audityVault = await AudityVault.deploy(verifierAddress);
 

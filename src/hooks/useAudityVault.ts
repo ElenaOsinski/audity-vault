@@ -1,7 +1,7 @@
 import { useContract, useContractRead, useContractWrite, useAccount } from 'wagmi';
-import { audityVaultABI } from '../lib/contracts';
+import { audityVaultABI } from '../lib/contracts/audityVaultABI';
 
-const CONTRACT_ADDRESS = import.meta.env.VITE_AUDITY_VAULT_CONTRACT || '0x742d35Cc6C4f4C4B73aa5555555555555555abcd';
+const CONTRACT_ADDRESS = import.meta.env.VITE_AUDITY_VAULT_CONTRACT || 'your_contract_address_here';
 
 export function useAudityVault() {
   const { address } = useAccount();
