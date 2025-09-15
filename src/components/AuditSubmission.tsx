@@ -64,17 +64,15 @@ export function AuditSubmission() {
       const mockProof = "0x" + "0".repeat(128);
       
       // Submit to contract
-      await submitAuditReport({
-        args: [
-          formData.organization as `0x${string}`,
-          formData.reportHash,
-          formData.auditType,
-          mockEncryptedRiskScore as `0x${string}`,
-          mockEncryptedComplianceScore as `0x${string}`,
-          mockEncryptedFindingsCount as `0x${string}`,
-          mockProof as `0x${string}`,
-        ],
-      });
+      await submitAuditReport([
+        formData.organization as `0x${string}`,
+        formData.reportHash,
+        formData.auditType,
+        mockEncryptedRiskScore as `0x${string}`,
+        mockEncryptedComplianceScore as `0x${string}`,
+        mockEncryptedFindingsCount as `0x${string}`,
+        mockProof as `0x${string}`,
+      ]);
       
       setIsEncrypting(false);
       setIsUploaded(true);
