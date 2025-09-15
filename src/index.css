@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corporate Finance Dashboard Design System - Professional & Secure */
+
+@layer base {
+  :root {
+    /* Corporate Background */
+    --background: 218 23% 95%;
+    --foreground: 215 28% 17%;
+
+    /* Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+    --card-elevated: 218 20% 98%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    /* Primary - Deep Corporate Blue */
+    --primary: 215 84% 22%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 215 84% 18%;
+
+    /* Secondary - Professional Gray */
+    --secondary: 215 16% 89%;
+    --secondary-foreground: 215 28% 17%;
+
+    /* Muted */
+    --muted: 215 16% 92%;
+    --muted-foreground: 215 13% 45%;
+
+    /* Accent - Trust Green */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Status Colors */
+    --verified: 142 71% 45%;
+    --verified-foreground: 0 0% 98%;
+    --pending: 45 93% 47%;
+    --pending-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders & Inputs */
+    --border: 215 20% 85%;
+    --input: 215 20% 85%;
+    --ring: 215 84% 22%;
+
+    /* Corporate Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 84% 22%) 0%, hsl(215 84% 18%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(218 20% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 71% 38%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(215 28% 17% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(215 28% 17% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(215 28% 17% / 0.16);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Corporate Dark Background */
+    --background: 215 28% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Dark Cards & Surfaces */
+    --card: 215 28% 12%;
+    --card-foreground: 0 0% 95%;
+    --card-elevated: 215 28% 15%;
+
+    /* Dark Popover */
+    --popover: 215 28% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Bright Corporate Blue for dark */
+    --primary: 215 84% 65%;
+    --primary-foreground: 215 28% 8%;
+    --primary-hover: 215 84% 70%;
+
+    /* Secondary - Dark Professional Gray */
+    --secondary: 215 25% 22%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Dark Muted */
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 13% 65%;
+
+    /* Accent - Bright Trust Green for dark */
+    --accent: 142 71% 55%;
+    --accent-foreground: 215 28% 8%;
+
+    /* Status Colors - Dark Mode */
+    --verified: 142 71% 55%;
+    --verified-foreground: 215 28% 8%;
+    --pending: 45 93% 60%;
+    --pending-foreground: 215 28% 8%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 95%;
+
+    /* Dark Borders & Inputs */
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
+    --ring: 215 84% 65%;
+
+    /* Dark Corporate Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 84% 65%) 0%, hsl(215 84% 70%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(215 28% 12%) 0%, hsl(215 28% 15%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142 71% 55%) 0%, hsl(142 71% 60%) 100%);
+
+    /* Dark Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 215 28% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 215 84% 65%;
+    --sidebar-primary-foreground: 215 28% 8%;
+    --sidebar-accent: 215 25% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 215 25% 25%;
+    --sidebar-ring: 215 84% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
